@@ -13,7 +13,10 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
+
     }
+    //jmv 17
+
 
     buildTypes {
         release {
@@ -23,14 +26,17 @@ android {
                 "proguard-rules.pro"
             )
         }
+
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
+
     }
 
     buildFeatures {
         compose = true
+
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
@@ -63,7 +69,7 @@ afterEvaluate {
             create<MavenPublication>("ReleaseAar") {
                 groupId = "com.github.DANILOCAPIRO"
                 artifactId = "lib-git-repository"
-                version = "6.6.6"
+                version = "7.7.7"
                 afterEvaluate {
                     artifact(tasks.getByName("bundleReleaseAar"))
                 }
