@@ -63,11 +63,12 @@ afterEvaluate {
             create<MavenPublication>("ReleaseAar") {
                 groupId = "com.github.DANILOCAPIRO"
                 artifactId = "lib-git-repository"
-                version = "1.0.0"
+                version = "6.6.6"
                 afterEvaluate {
                     artifact(tasks.getByName("bundleReleaseAar"))
                 }
             }
+
         }
     }
 }
