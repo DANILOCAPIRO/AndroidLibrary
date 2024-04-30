@@ -69,10 +69,10 @@ dependencies {
 afterEvaluate {
     publishing {
         publications {
-            create<MavenPublication>("ReleaseAar") {
+            create<MavenPublication>("librarytest-release.arr") {
                 groupId = "com.github.DANILOCAPIRO"
                 artifactId = "librarytest"
-                version = "11.11.11"
+                version = "12.12.12"
             }
 
         }
