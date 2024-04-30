@@ -71,9 +71,9 @@ afterEvaluate {
         publications {
             create<MavenPublication>("ReleaseAar") {
 
-                groupId = "com.github"
-                artifactId = "mathlibrary"
-                version = "8.8.8"
+                groupId = "com.capiro"
+                artifactId = "librarytest"
+                version = "9.9.9"
             }
 
         }
