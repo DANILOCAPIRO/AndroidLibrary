@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.androidLibrary)
     //maven Publish
     id("maven-publish")
+    (`maven-publish`)
 }
 
 android {
@@ -33,6 +34,8 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
 
     }
+
+    // jvm
 
     buildFeatures {
         compose = true
@@ -67,12 +70,10 @@ afterEvaluate {
     publishing {
         publications {
             create<MavenPublication>("ReleaseAar") {
-                groupId = "com.github.DANILOCAPIRO"
-                artifactId = "lib-git-repository"
-                version = "7.7.7"
-                afterEvaluate {
-                    artifact(tasks.getByName("bundleReleaseAar"))
-                }
+
+                groupId = "com.github"
+                artifactId = "mathlibrary"
+                version = "8.8.8"
             }
 
         }
