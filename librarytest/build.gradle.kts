@@ -1,5 +1,5 @@
 plugins {
-    alias(libs.plugins.androidLibrary)
+    id("com.android.library")
     //maven Publish
     id("maven-publish")
     (`maven-publish`)
@@ -70,9 +70,9 @@ afterEvaluate {
     publishing {
         publications {
             create<MavenPublication>("ReleaseAar") {
-                groupId = "com.capiro"
+                groupId = "com.github.DANILOCAPIRO"
                 artifactId = "librarytest"
-                version = "10.10.10"
+                version = "11.11.11"
             }
 
         }
