@@ -1,4 +1,4 @@
-package com.capiro.librarytest
+package com.capiroLibrary.librarytest
 
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text

@@ -71,8 +71,8 @@ afterEvaluate {
         publications {
             create<MavenPublication>("librarytest-release.arr") {
                 groupId = "com.github.DANILOCAPIRO"
-                artifactId = "librarytest"
-                version = "12.12.12"
+                artifactId = "AndroidLibrary"
+                version = "13.13.13"
             }
 
         }
