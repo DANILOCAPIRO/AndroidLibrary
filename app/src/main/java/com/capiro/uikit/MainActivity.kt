@@ -10,7 +10,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.capiro.librarytest.TeoLibrary
+
+
 
 
 import com.capiro.uikit.ui.theme.UikitTheme
@@ -26,9 +27,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     Greeting("Android")
-                    TeoLibrary {
-                        println("chupa monda")
-                    }
+
                 }
             }
         }

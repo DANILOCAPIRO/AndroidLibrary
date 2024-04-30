@@ -70,10 +70,9 @@ afterEvaluate {
     publishing {
         publications {
             create<MavenPublication>("ReleaseAar") {
-
                 groupId = "com.capiro"
                 artifactId = "librarytest"
-                version = "9.9.9"
+                version = "10.10.10"
             }
 
         }
